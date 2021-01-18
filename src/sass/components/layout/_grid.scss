@@ -1,0 +1,22 @@
+/* .mrow{
+
+    max-width: $grid-width;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: $gutter-vertical;
+    display: flex;
+    float: right;
+}
+.box-1-of-5{
+   margin-left: 2rem; 
+   border: .2px solid $dark-color;
+   box-shadow: 0 .2rem .2rem .2rem $dark-color;
+   padding: 2rem 2rem;
+   
+   &:hover{
+       transform: scale(1.1);
+   }
+} */
+.footer{
+    padding: 25rem 0;
+}

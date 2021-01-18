@@ -1,0 +1,33 @@
+.social{
+    position: fixed;
+    left: -2rem;
+    top: 30%;
+    z-index: 1000;
+    
+    &_list{
+        list-style-type: none;
+    }
+}
+.sociallogo{
+   font-size: 5rem;
+   &_phone{
+       display: none;
+       @media screen and(max-width:960px){
+        display: block;
+        color: green;
+        z-index: 10;
+       }
+   }
+   &_facebook{
+       color: $facebook-color;
+   }
+   &_instagram{
+       color: $instagram-color;
+   }
+   &_whatsapp{
+    color: $whatsapp-color;
+   }
+   @media screen and(max-width:960px){
+    font-size: 4.5rem;
+   }
+}

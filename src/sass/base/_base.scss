@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before{
+  margin:0;
+  padding:0;  
+}
+html{
+  font-size:62.5%;
+  //position: relative;
+  width:100%;
+  height:100%; 
+}
+body{
+  font-family: 'Assistant', sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  color:$browen-color;
+  overflow-x: hidden;
+  width:100%; 
+  height:100%; 
+}

@@ -1,0 +1,65 @@
+.special{
+    &_headers{
+        margin-right: 2rem;
+        display: flex;
+        justify-content: center;
+        &-header{
+            margin: 5rem 3rem;
+            padding: 1rem 3rem;
+            //background-color:$cream-color;
+            border: .2rem solid $tuta-color;
+            border-radius: 2rem;
+            cursor: pointer;
+            //border: .1rem solid $dark-color;
+            h4{
+                color: $tuta-color;
+                font-size: 4rem;
+            }
+            @media screen and(max-width:960px){
+                padding:1rem;
+                margin: 0 1rem;
+                h4{
+                    font-size: 2rem;
+                }
+            }
+        }
+        @media screen and(max-width:960px){
+            margin-right: 0;
+        }
+    }
+    &_container{
+        position: relative;
+        padding: 5rem 2rem;
+    }
+}
+.active{
+    background-color: $tuta-color!important;
+    border: .2rem solid #fff;
+    h4{
+        color: #fff;
+        font-size: 4rem;
+    }
+    @media screen and(max-width:960px){
+        padding:1rem;
+        margin: 0 1rem;
+        h4{
+            font-size: 2rem;
+        }
+    }
+}
+.none{
+    position: absolute;
+    left: -100%;
+    font-size: 5rem;
+}
+.present{
+    position: absolute;
+    left: 40%;
+    font-size: 5rem;
+}
+
+.recomends{
+    position: absolute;
+    left: -100%;
+    font-size: 5rem;
+}
