@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ProductList = ({products}) => {
+const ProductList = ({products,col}) => {
  
 
     return (
@@ -8,8 +8,8 @@ const ProductList = ({products}) => {
                 {
                     products && products.length > 0 && products.map((product)=> 
                    (
-                        <div key={product.id} className="col-6 col-md-3 mx-auto">   
-                            <img src={product.img} className="img-fluid" style={{height:'60%'}} />
+                        <div key={product.id} className={col? `col-6 col-md-${col} mx-auto`:"col-6 col-md-3 mx-auto"}>   
+                            <img src={product.img} className="img-fluid" style={{height:'60%'}} alt=""/>
                         </div>
                    )
                  

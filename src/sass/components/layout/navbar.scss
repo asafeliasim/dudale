@@ -16,6 +16,7 @@
     &_link{
         color: $dark-color;
         text-decoration: none;
+        font-family: 'primaryHeaderFont';
         &:hover{
             color: $tuta-color;
         }

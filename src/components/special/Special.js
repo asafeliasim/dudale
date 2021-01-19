@@ -15,11 +15,11 @@ const Special = () => {
         setSpecial(false);
         setRecomend(false);
     }
-    const recomendClick = () => {
+/*     const recomendClick = () => {
         setRecomend(true);
         setSpecial(false);
         setNews(false);
-    }
+    } */
     return (
         <section className="special py-5" id="special">
             <div className="special_headers">
@@ -29,9 +29,7 @@ const Special = () => {
                 <div  className={news ? "special_headers-header active" :"special_headers-header"} onClick={newsClick}>
                 <h4>חדשים</h4>
                 </div>
-                <div  className={recomend? "special_headers-header active":"special_headers-header"} onClick={recomendClick}>
-                <h4>מומלצים</h4>
-                </div>   
+               
             </div>
             <div className="special_container container mt-5">
                 <h5 className={special?"present":"none"}>מבצעים</h5>

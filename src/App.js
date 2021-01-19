@@ -11,7 +11,7 @@ import Products from './pages/Products';
 
 import fruits from './data/fruits';
 import drinks from './data/drinks';
-
+import creams from './data/creams';
 
 import snacksbg from './asserts/img/snacks/snacksbg.jpeg';
 import creamsbg from './asserts/img/creams/creams.jpeg';
@@ -48,7 +48,7 @@ const App = () => {
         <Route path="/fruits" render={()=><Products products={fruits} img={fruitsbg}/>}/>
         <Route path="/drinks" render={()=><Products products={drinks} img={drinksbg}/>}/>
         <Route path="/snacks" render={()=><Products img={snacksbg}/>}/>
-        <Route path="/creams" render={()=><Products  img={creamsbg}/>}/>
+        <Route path="/creams" render={()=><Products products={creams} img={creamsbg} col={4}/>}/>
         <Route path="/icecreams" render={()=><Products  img={icecreamsbg}/>}/>
         </Router>
         <Footer /> 

@@ -19,7 +19,7 @@ const Menu = () => {
     return (
         <section className="menu" id="productsection">
             <div className="headline d-flex justify-content-center">
-               <img src={productTitle} className="menu_title-img"/>
+               <img src={productTitle} alt="" className="menu_title-img"/>
             </div>
             
             <div className="container products">
