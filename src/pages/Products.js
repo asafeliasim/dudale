@@ -3,7 +3,7 @@ import ProductList from '../components/products/ProductList';
 
 
 
-const height = window.innerWidth > 960 ? '65rem' : '50rem'; 
+const height = window.innerWidth > 960 ? '50rem' : '20rem'; 
 
 const Chocolats = ({products,img,col}) => {
     const bgStyle = {
