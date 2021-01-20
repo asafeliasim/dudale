@@ -28,6 +28,7 @@ import werthers from "../../../asserts/img/firmas/werther's.png";
 import hersheys from '../../../asserts/img/firmas/hersheys.png'
 import Slider from "react-slick";
 import bgImg from '../../../asserts/img/footer.jpeg';
+import bgMobileImg from '../../../asserts/img/backgroundfooter.png';
 
 
 import FirmaCard from '../../firma/firmaCard';
@@ -46,13 +47,24 @@ const firmas = [
     {id:25,index:24,img: `${tobleron}`},{id:26,index:25,img: `${werthers}`},{id:27,index:26,img:hersheys}
 ]
 
+const mobile = window.innerWidth <= 960 ? true : false;
+
 const bgStyle = {
-backgroundImage: `url(${bgImg})`,
-backgroundSize:'cover'
+    backgroundImage: `url(${bgImg})`,
+    backgroundSize:'cover',
+    width: '100%',
+    height: 'auto'
 
         //backgroundSize: '100rem'
 }
+const bgMobileStyle = {
+    backgroundImage: `url(${bgMobileImg})`,
+    backgroundSize:'cover',
+    width: '100%',
+    height: 'auto'
 
+        //backgroundSize: '100rem'
+}
 const settingsThumbs = window.innerWidth > 960 ? {
     slidesToShow: 6,
     slidesToScroll:6,
@@ -92,10 +104,11 @@ const Footer = () => {
    
 
     return (
-        <footer className="container-fluid footer" style={bgStyle}>
-        <div className="container">
+        <footer className="container-fluid footer" style={mobile? bgMobileStyle :bgStyle}>
+        <div className="container py-5">
+        <div className="mt-5">
         <div className="slider-wrapper py-5">
-        <div className="thumbnail-slider-wrap">
+        <div className="thumbnail-slider-wrap mt-4">
         <Slider
             {...settingsThumbs}
             asNavFor={nav1}
@@ -114,6 +127,8 @@ const Footer = () => {
         </Slider>
         </div>
         </div>
+        </div>
+
        
       
       </div>
