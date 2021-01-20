@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import ProductList from '../components/products/ProductList';
 
 
@@ -14,8 +14,11 @@ const Chocolats = ({products,img,col}) => {
         backgroundAttachment: 'fixed',
         height:height
     }
+    useEffect(()=>{
+        window.scrollTo(0,0);
+    },[])
     return (
-        <section className="chocolats">
+        <section className="chocolats" id="products">
         <div style={bgStyle}>
                 
         </div>

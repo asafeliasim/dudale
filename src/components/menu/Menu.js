@@ -54,7 +54,7 @@ const Menu = () => {
                     </div>
                 
                     <div className="col-12 col-md-4 my-5">
-                    <LinkContainer to="/chocolats" style={style}>  
+                    <LinkContainer to="/chocolats/#products" style={style}>  
                     <div className="box">
                         <div className="box_img">
                             <img  className="img" alt="" src={candy}/>

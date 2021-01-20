@@ -29,7 +29,15 @@ const Navbar = () => {
     }
     const hamburgerClick = () => {
         console.log(hamburgerClicked);
+     
         setHamburgerClicked(!hamburgerClicked)
+      
+      
+    }
+    const handleClicke = () => {
+        setTimeout(()=>{
+            setHamburgerClicked(false)             
+        },200)
     }
     const icons = [
         "fas fa-times",
@@ -45,17 +53,17 @@ const Navbar = () => {
         
                
                 <ul className={!hamburgerClicked ?"nav_phoneItems":"nav_phoneItems-active"}>
-                    <li className="nav_phoneItems-item">
+                    <li className="nav_phoneItems-item" onClick={handleClicke}>
                         <a className="nav_phoneLink" href="http://localhost:3000/">
                             ראשי
                         </a>
                     </li>
-                    <li className="nav_phoneItems-item">
+                    <li className="nav_phoneItems-item"  onClick={handleClicke}>
                         <a className="nav_phoneLink" href="#productsection">
                             המוצרים שלנו
                         </a>   
                     </li>
-                    <li className="nav_phoneItems-item">
+                    <li className="nav_phoneItems-item"  onClick={handleClicke}>
                         <a className="nav_phoneLink" href="#special">
                         המבצעים
                         </a>
