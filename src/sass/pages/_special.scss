@@ -1,14 +1,14 @@
 .special{
     &_headers{
-        margin-right: 2rem;
+        margin: 0;
         display: flex;
         justify-content: center;
         &-header{
-            margin: 5rem 3rem;
-            padding: 1rem 3rem;
+            margin: 5rem 0;
+            padding: .8rem 2rem;
             //background-color:$cream-color;
-            border: .2rem solid $tuta-color;
-            border-radius: 2rem;
+            border: .1rem solid $tuta-color;
+            //border-radius: 2rem;
             cursor: pointer;
             //border: .1rem solid $dark-color;
             h4{
@@ -34,7 +34,11 @@
 }
 .active{
     background-color: $tuta-color!important;
-    border: .2rem solid #fff;
+    //border: .2rem solid #fff;
+    border: none;
+    -webkit-box-shadow: inset .1rem .1rem .6rem #777;
+     -moz-box-shadow:  inset .1rem .1rem .5rem #777;
+          box-shadow:  inset .1rem .1rem .8rem #777;
     h4{
         color: #fff;
         font-size: 4rem;

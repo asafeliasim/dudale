@@ -49,7 +49,7 @@ const App = () => {
         <Route path="/chocolats" render={()=><Products products={chocolateData} img={chocolateBG}/>} />
         <Route path="/fruits" render={()=><Products products={fruits} img={fruitsbg}/>}/>
         <Route path="/drinks" render={()=><Products products={drinks} img={drinksbg}/>}/>
-        <Route path="/snacks" render={()=><Products products={snacks} img={snacksbg}/>}/>
+        <Route path="/snacks" render={()=><Products products={snacks} img={snacksbg} />}/>
         <Route path="/creams" render={()=><Products products={creams} img={creamsbg} col={4}/>}/>
         <Route path="/icecreams" render={()=><Products  img={icecreamsbg}/>}/>
         </Router>
