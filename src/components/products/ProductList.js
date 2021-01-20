@@ -8,7 +8,7 @@ const ProductList = ({products,col}) => {
                 {
                     products && products.length > 0 && products.map((product)=> 
                    (
-                        <div key={product.id} className={col? `col-6 col-md-${col} mx-auto`:"col-6 col-md-3 mx-auto"}>   
+                        <div key={product.id} className={col? `col-12 mx-auto col-md-${col} `:"col-10  mx-auto col-md-3 "}>   
                             <img src={product.img} className="img-fluid" style={{height:'60%'}} alt=""/>
                         </div>
                    )
