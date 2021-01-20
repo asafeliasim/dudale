@@ -1,5 +1,11 @@
 import React,{useState} from 'react'
 
+
+const style = {
+    background: 'linear-gradient(to bottom,rgba(248, 246, 233, 0.7),rgba(109, 55, 43, 1))'
+}
+const mobile = window.innerWidth <= 960 ? true : false;
+
 const Special = () => {
     const [special,setSpecial] = useState(true);
     const [news,setNews] = useState(false);
@@ -21,7 +27,7 @@ const Special = () => {
         setNews(false);
     } 
     return (
-        <section className="special py-5" id="special">
+        <section className="special py-5" id="special" style={mobile? style: null}>
             <div className="special_headers">
                 <div className={special ? "special_headers-header active" : "special_headers-header"} onClick={specialsClick}>
                     <h4>מבצעים</h4>

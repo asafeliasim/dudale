@@ -6,16 +6,12 @@ import Special from '../components/special/Special';
 import Divider from '../components/layout/Divider';
 
 
-const bgStyle = {
-    backgroundImage: `url(${bgImg})`,
-    //backgroundSize: '100rem'
-}
 
 
 const Home = () => {
-    
+ 
     return (
-        <div className="homePage" style={bgStyle}>
+        <div className="homePage" id="head">
             <LandingImg />
             <Menu />
             <Divider />

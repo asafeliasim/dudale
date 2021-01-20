@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Social from './components/layout/Social';
 import Footer from './components/layout/footer/Footer';
 import chocolateData from './pages/chocolateData';
-import {BrowserRouter as Router,Route} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import chocolateBG from './asserts/img/chocolatsbg.jpeg';
 import Products from './pages/Products';
 
@@ -39,21 +39,25 @@ const App = () => {
     }
   }
   return (
-    <>
-    <Navbar />
-    <div className="social">
-    <Social />
-  </div>  
-        <Router>
-        <Route path="/" component={Home} exact />
-        <Route path="/chocolats" render={()=><Products products={chocolateData} img={chocolateBG}/>} />
-        <Route path="/fruits" render={()=><Products products={fruits} img={fruitsbg}/>}/>
-        <Route path="/drinks" render={()=><Products products={drinks} img={drinksbg}/>}/>
-        <Route path="/snacks" render={()=><Products products={snacks} img={snacksbg} />}/>
-        <Route path="/creams" render={()=><Products products={creams} img={creamsbg} col={4}/>}/>
-        <Route path="/icecreams" render={()=><Products  img={icecreamsbg}/>}/>
-        </Router>
-        <Footer /> 
+      <>
+      
+      <div className="social">
+      <Social />
+      </div> 
+      <Router>
+      <Navbar />
+        <Switch>
+          <Route path="/" component={Home} exact />
+          <Route path="/chocolats" render={()=><Products products={chocolateData} img={chocolateBG}/>} />
+          <Route path="/fruits" render={()=><Products products={fruits} img={fruitsbg}/>}/>
+          <Route path="/drinks" render={()=><Products products={drinks} img={drinksbg}/>}/>
+          <Route path="/snacks" render={()=><Products products={snacks} img={snacksbg} />}/>
+          <Route path="/creams" render={()=><Products products={creams} img={creamsbg} col={4}/>}/>
+          <Route path="/icecreams" render={()=><Products  img={icecreamsbg}/>}/>
+      </Switch>
+      </Router>
+    
+    <Footer /> 
     </>
   
    

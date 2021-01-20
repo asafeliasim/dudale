@@ -1,17 +1,17 @@
 import React from 'react'
 import snacks from '../../asserts/img/snacks.png';
 import nutela from '../../asserts/img/creams.png';
-import iceCream from '../../asserts/img/icecreams2.jpeg';
+import iceCream from '../../asserts/img/icecreams2.png';
 import fruits from '../../asserts/img/fruits.png';
 import candy from '../../asserts/img/chocolate.png';
 
-import drinks from '../../asserts/img/drink.jpeg';
+import drinks from '../../asserts/img/drink.png';
 import productTitle from '../../asserts/img/producTitle.jpeg'
 import {LinkContainer} from 'react-router-bootstrap';
 
 const style = {
     textDecoration:'none',
-    color: '#000'
+   
 }
 
 
