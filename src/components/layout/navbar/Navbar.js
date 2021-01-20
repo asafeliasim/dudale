@@ -46,7 +46,7 @@ const Navbar = () => {
                
                 <ul className={!hamburgerClicked ?"nav_phoneItems":"nav_phoneItems-active"}>
                     <li className="nav_phoneItems-item">
-                        <a className="nav_phoneLink" to="/">
+                        <a className="nav_phoneLink" href="http://localhost:3000/">
                             ראשי
                         </a>
                     </li>
@@ -63,7 +63,7 @@ const Navbar = () => {
                 </ul>
                 <ul className="nav_items">
                     <li className="nav_items-item">
-                        <a className="nav_link" href="#">
+                        <a className="nav_link"  href="http://localhost:3000">
                         ראשי
                         </a>
                         
