@@ -4,7 +4,7 @@ const Social = () => {
     return (     
         <ul className="social_list">
             <li>
-                <a href="#" className="sociallogo">
+                <a href="tel:+972506384221" className="sociallogo">
                     <span className="sociallogo_phone">
                         <i className="fas fa-phone-square"/>
                     </span>
@@ -25,7 +25,7 @@ const Social = () => {
                 </a>
                 </li>
             <li>
-                <a href="#" className="sociallogo">
+                <a href="https://wa.me/972506384221" target="_blank" className="sociallogo">
                     <span className="sociallogo_whatsapp">
                         <i className="fab fa-whatsapp-square"/>
                     </span>
