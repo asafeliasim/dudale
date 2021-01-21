@@ -3,7 +3,8 @@ import ProductList from '../components/products/ProductList';
 
 
 
-const height = window.innerWidth > 960 ? '50rem' : '20rem'; 
+const height = window.innerWidth > 960 ? '50rem' : '40rem'; 
+const mobile = window.innerWidth <= 960 ? true : false;
 
 const Chocolats = ({products,img,col}) => {
     const bgStyle = {
@@ -23,7 +24,7 @@ const Chocolats = ({products,img,col}) => {
                 
         </div>
         <div className="container mt-5">
-        <div className="row py-5">
+        <div className={mobile ? "row pro-row py-5": "row py-5"}>
                 <ProductList products={products } col={col}/>
             </div>
         </div>

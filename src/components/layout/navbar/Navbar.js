@@ -2,7 +2,11 @@ import React, { useEffect,useState } from 'react'
 import logo from '../../../asserts/img/dudalogo.png';
 import {LinkContainer} from 'react-router-bootstrap';
 import { useLocation,useHistory} from 'react-router-dom';
-
+const mobile = window.innerWidth <= 960 ? true: false;
+const logoMobileStyle = {
+    maxWidth:'20rem',
+    height:'12rem'
+}
 const Navbar = () => {
     const [navbar,setNavbar] = useState(false);
     const [hamburgerClicked,setHamburgerClicked] = useState(false);
@@ -19,13 +23,13 @@ const Navbar = () => {
  
     const backToHome = () => history.push('/');
     const changeBackground = () => {
-        console.log(window.scrollY);
+     
        if(window.scrollY > 400){
            setNavbar(true)
 
        }else{
            setNavbar(false)
-           console.log(navbar);
+           
        }
     }
     const copyNumber = () => {
@@ -53,9 +57,10 @@ const Navbar = () => {
         "fas fa-times",
         "fas fa-bars"
     ]
+    
     window.addEventListener('scroll',changeBackground);
     return (
-        <nav className={navbar? "nav white":"nav"}>
+        <nav className={navbar || mobile? "nav white":"nav"}>
             <img className="nav_logo" src={logo} />   
                 <div className="nav_icon" onClick={hamburgerClick}>
                  <i className={hamburgerClicked? icons[0]: icons[1]}  />

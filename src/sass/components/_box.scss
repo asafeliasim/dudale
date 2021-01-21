@@ -59,3 +59,19 @@
         width: 14rem;
     }
 }
+
+.pro-row{
+   
+        :first-child{
+            margin-top: 0!important;
+        }
+        :last-child{
+            margin-bottom: -15rem!important;
+        }
+    
+ 
+}
+.pro-col{
+    margin-top: -20rem!important;
+    margin-right: 5rem!important;
+}
