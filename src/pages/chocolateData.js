@@ -32,7 +32,7 @@ import milkanuts from '../asserts/img/chocolates/milkanuts.png';
 import milkaoreo from '../asserts/img/chocolates/milkaoreo.png';
 import milkaoreo2 from '../asserts/img/chocolates/milkaoreo2.png';
 import milkastrawberry from '../asserts/img/chocolates/milkastrawberry.png';
-import NUTELLAToGO from '../asserts/img/chocolates/nutellatogo.png';
+//import NUTELLAToGO from '../asserts/img/chocolates/nutellatogo.png';
 
 import oreo from '../asserts/img/chocolates/oreo.png';
 import oreodutch from '../asserts/img/chocolates/oreodutch.png';
@@ -78,7 +78,7 @@ export default [
     },{id:5,img:Heidipistachio},{id:6,img:Heidiextreme},{id:7,img:Heididarkhazelnuts},{id:8,img:HeidiCarameWalnut},
     {id:9,img:Heidisaltedcaramel},{id:10,img:Heidiblueberry},{id:11,img:Heidialmondspistachio},{id:12,img:loackerturtina},{id:13,img:loackerwhite},{id:14,img:MMmilkchoco},{id:15,img:MMpeanuts},{id:16,img:MMpenautbatter},
     {id:17,img:milkastrawberry},{id:18,img:milkaoreo2},{id:19,img:milkaoreo},{id:20,img:milkanuts},{id:21,img:milkahie},{id:22,img:milkacookies},{id:23,img:milkachococookies},{id:24,img:mars},
-    {id:25,img:oreo},{id:26,img:oreodutch},{id:27,img:ptibervanil},{id:28,img:ptiberchoco},{id:29,img:NUTELLAToGO},{id:30,img:timatamwhite},{id:31,img:timatamstrawberry},{id:32,img:timtam},
+    {id:25,img:oreo},{id:26,img:oreodutch},{id:27,img:ptibervanil},{id:28,img:ptiberchoco},/* {id:29,img:NUTELLAToGO}, */{id:30,img:timatamwhite},{id:31,img:timatamstrawberry},{id:32,img:timtam},
     {id:33,img:timmtamcarmel},{id:34,img:timtamduble},{id:35,img:timatamhonny},{id:36,img:timatamotange},{id:37,img:Kinderfinger50},{id:38,img:Kinderfinger100},{id:39,img:Kinderjoy},{id:40,img:Kinderegg},
     {id:41,img:snickers},{id:42,img:resees}, {id:43,img:hershizdrop},{id:44,img:Kinderdelis}, {id:45,img:happynuts},{id:46,img:happycacao}, {id:47,img:hanutariggle},{id:48,img:twinkies},{id:49,img:maltesers},
     {id:50,img:tenta}

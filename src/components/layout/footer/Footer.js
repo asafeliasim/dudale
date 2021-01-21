@@ -32,7 +32,7 @@ import bgMobileImg from '../../../asserts/img/backgroundfooter.png';
 
 
 import FirmaCard from '../../firma/firmaCard';
-import asafLogo from '../../../asserts/img/metaLogo.JPG';
+import asafLogo from '../../../asserts/img/Logo.png';
 
 
 import "slick-carousel/slick/slick.css";
@@ -127,7 +127,12 @@ const Footer = () => {
                 </div>
             </div>
             <div className="footer_asaf">
-                                fdsfdsfdsfdsfsd
+                <div className="d-flex justify-content-center">
+                        <img src={asafLogo} alt="" className="footer_asaf-img"/>
+                        <p className="footer_asaf-dsc">
+                            
+                        </p>
+                </div>
             </div>
         </footer>
        
