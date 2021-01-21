@@ -27,7 +27,7 @@ const Special = () => {
         setNews(false);
     } 
     return (
-        <section className="special py-5" id="special" style={mobile? style: null}>
+        <section className="special py-5" id="special" style={style}>
             <div className="special_headers">
                 <div className={special ? "special_headers-header active" : "special_headers-header"} onClick={specialsClick}>
                     <h4>מבצעים</h4>

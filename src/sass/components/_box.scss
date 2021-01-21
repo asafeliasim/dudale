@@ -56,7 +56,8 @@
     //height: 100%;
     width: 25rem;
     @media screen and(max-width:960px){
-        width: 14rem;
+        float: none;
+        width: 100%;
     }
 }
 
@@ -66,12 +67,12 @@
             margin-top: 0!important;
         }
         :last-child{
-            margin-bottom: -15rem!important;
+            margin-bottom: -2rem!important;
         }
     
  
 }
 .pro-col{
-    margin-top: -20rem!important;
+    margin-top: -10rem!important;
     margin-right: 5rem!important;
 }

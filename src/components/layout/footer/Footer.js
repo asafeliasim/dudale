@@ -50,11 +50,8 @@ const firmas = [
 const mobile = window.innerWidth <= 960 ? true : false;
 
 const bgStyle = {
-    backgroundImage: `url(${bgImg})`,
-    backgroundSize:'cover',
-    width: '100%',
-    height: 'auto'
-
+    backgroundImage: `url(${bgMobileImg})`,
+    backgroundSize:'contain',
         //backgroundSize: '100rem'
 }
 const bgMobileStyle = {
