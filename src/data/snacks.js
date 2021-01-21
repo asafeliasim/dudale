@@ -16,6 +16,8 @@ import PRINGLES from '../asserts/img/snacks/PRINGLES.png';
 import WERTHEBREZEL from '../asserts/img/snacks/WERTHEBREZEL.png';
 import cupcakes from '../asserts/img/snacks/cupcakes.png';
 import twinkies from '../asserts/img/snacks/twinkies.png';
+import twinkiesmint from '../asserts/img/snacks/twinkiesmint.png';
+
 import apropo from '../asserts/img/snacks/apropo.png';
 import bamba from '../asserts/img/snacks/bamba.png';
 import bambanuget from '../asserts/img/snacks/bambanuget.png';
@@ -66,5 +68,6 @@ export default [
     
     {id:24,img:cupcakes},
     {id:25,img:twinkies},
+    {id:26,img:twinkiesmint},
 ]
 

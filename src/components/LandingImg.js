@@ -27,8 +27,8 @@ const mobileStyle = {
 const LandingImg = () => {
     return (
         <Fragment>
-            <div style={mobile? mobileStyle : bgStyle}>
-             
+            <div style={!mobile? bgStyle : null }>
+                {mobile && <img src={mobilebg} style={{width:'100%',height:'30rem',marginTop:'10rem'}} alt="" />}
             </div>
           
         </Fragment>
