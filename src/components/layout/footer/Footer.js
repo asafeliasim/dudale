@@ -102,34 +102,33 @@ const Footer = () => {
 
     return (
         <footer className="container-fluid footer" style={mobile? bgMobileStyle :bgStyle}>
-        <div className="container py-5">
-        <div className="mt-5">
-        <div className="slider-wrapper py-5">
-        <div className="thumbnail-slider-wrap mt-4">
-        <Slider
-            {...settingsThumbs}
-            asNavFor={nav1}
-            autoplay
-            infinite
-        
-            ref={firma => (setSlider2(firma))}>
-        
-            {firmas.map((firma) =>
+            <div className="container py-5">
+                <div className="mt-5">
+                    <div className="slider-wrapper py-5">
+                        <div className="thumbnail-slider-wrap mt-4">
+                            <Slider
+                                {...settingsThumbs}
+                                asNavFor={nav1}
+                                autoplay
+                                infinite
+                            
+                                ref={firma => (setSlider2(firma))}>
+                            
+                                {firmas.map((firma) =>
 
-            <div className="slick-slide" key={firma.id}>
-                <img className="slick-slide-image" src={firma.img} />
+                                <div className="slick-slide" key={firma.id}>
+                                    <img className="slick-slide-image" src={firma.img} />
+                                </div>
+
+                                )}
+                            </Slider>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            )}
-        </Slider>
-        </div>
-        </div>
-        </div>
-
-       
-      
-      </div>
-
+            <div className="footer_asaf">
+                                fdsfdsfdsfdsfsd
+            </div>
         </footer>
        
     )
