@@ -8,6 +8,7 @@ import chocolateData from './pages/chocolateData';
 import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import chocolateBG from './asserts/img/chocolatsbg.jpeg';
 import Products from './pages/Products';
+import IceCreamProducts from './pages/IceCreamProducts';
 
 import fruits from './data/fruits';
 import drinks from './data/drinks';
@@ -18,7 +19,7 @@ import snacks from './data/snacks';
 import snacksbg from './asserts/img/snacks/snacksbg.jpeg';
 import creamsbg from './asserts/img/creams/creams.jpeg';
 import fruitsbg from './asserts/img/fruits/fruitsbg.jpeg';
-import icecreamsbg from './asserts/img/icecreams/icecreamsbg.jpeg';
+
 import drinksbg from './asserts/img/drinks/drinksbg.jpeg';
 
 const App = () => {
@@ -53,7 +54,7 @@ const App = () => {
           <Route path="/drinks" render={()=><Products products={drinks} img={drinksbg}/>}/>
           <Route path="/snacks" render={()=><Products products={snacks} img={snacksbg} />}/>
           <Route path="/creams" render={()=><Products products={creams} img={creamsbg} col={4}/>}/>
-          <Route path="/icecreams" render={()=><Products  img={icecreamsbg}/>}/>
+          <Route path="/icecreams" render={()=><IceCreamProducts />}/>
       </Switch>
       </Router>
     

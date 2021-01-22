@@ -27,16 +27,18 @@ import tobleron from '../../../asserts/img/firmas/tobleron.png';
 import werthers from "../../../asserts/img/firmas/werther's.png";
 import hersheys from '../../../asserts/img/firmas/hersheys.png'
 import Slider from "react-slick";
-import bgImg from '../../../asserts/img/footer.jpeg';
+
 import bgMobileImg from '../../../asserts/img/backgroundfooter.png';
 
 
-import FirmaCard from '../../firma/firmaCard';
-import asafLogo from '../../../asserts/img/Logo.png';
+
+import asafLogo from '../../../asserts/img/smallLogo.png';
+
 
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Divider from '../Divider';
 
 const firmas = [
  
@@ -128,11 +130,22 @@ const Footer = () => {
             </div>
             <div className="footer_asaf">
                 <div className="d-flex justify-content-center">
-                        <img src={asafLogo} alt="" className="footer_asaf-img"/>
-                        <p className="footer_asaf-dsc">
-                            
-                        </p>
-                </div>
+              
+                    <div className="footer_asaf-dsc mt-4">
+                    <a href="http://eliasim.com" target="_blank" className="footer_asaf-link">
+                         <p className="footer_asaf-descp text-uppercase">           
+                            Powered by 
+                            Asaf Eliasim             
+                        </p> 
+                    </a>          
+                    </div>  
+                    <div className="mr-5">
+                    <a href="http://eliasim.com" target="_blank">
+                        <img src={asafLogo} alt="" className="footer_asaf-img"/>     
+                    </a>      
+                    </div>  
+                  
+                </div>           
             </div>
         </footer>
        

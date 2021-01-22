@@ -3,6 +3,7 @@
     padding: 2rem 0 !important;
     background-color: $light-tuta-color;
     height: 40rem;
+   
     &_logo{  
         padding: 12rem 2rem;
        position: relative;
@@ -16,15 +17,41 @@
         
     }
     &_asaf{
-        height: 12rem;
+        height:12rem;
         position: absolute;
         bottom: 0;
         width: 100%;
-        background-color: #333;
+       
+        background-color:#293039;
         text-align: center;
-        padding: 2rem 0;
+        padding: 1rem 0;
+        @media screen and (max-width:960px){
+            height: 4rem;
+           
+        }
         &-img{
-            height: 10rem;
+            height:10rem;
+            width: 12rem;
+         
+            @media screen and (max-width:960px){
+                height: 10rem;
+                margin-right: 1rem;
+            }           
+        } 
+       
+        &-descp {
+            font-size: 2.4rem;
+            margin-top: 2rem;
+            margin-left: 2rem;
+            color: #eeeeee;
+            @media screen and (max-width:960px){
+                font-size: 1.6rem;
+                margin-right: 1rem;
+
+            }
+        }
+        &-link{
+            text-decoration: none;
         }
     }
 }
