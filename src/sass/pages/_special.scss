@@ -1,4 +1,5 @@
 .special{
+   
     &_headers{
         margin: 0;
         display: flex;
@@ -6,13 +7,13 @@
         &-header{
             margin: 5rem 0;
             padding: .8rem 2rem;
-            //background-color:$cream-color;
-            border: .1rem solid $tuta-color;
+            background-color:$tuta-color;
+            border: .1rem solid $cream-color;
             //border-radius: 2rem;
             cursor: pointer;
             //border: .1rem solid $dark-color;
             h4{
-                color: $tuta-color;
+                color: $cream-color;
                 font-size: 4rem;
             }
             @media screen and(max-width:960px){
@@ -28,12 +29,16 @@
         }
     }
     &_container{
+        &-sales{
+            position: relative;
+        //height: 100rem;
+        }
         position: relative;
         padding: 5rem 2rem;
     }
 }
 .active{
-    background-color: $tuta-color!important;
+    background-color: $stone-color!important;
     //border: .2rem solid #fff;
     border: none;
     -webkit-box-shadow: inset .1rem .1rem .6rem #777;
@@ -61,7 +66,8 @@
 }
 .present{
     position: absolute;
-    left: 40%;
+    left: 10%;
+   
     font-size: 5rem;
 }
 

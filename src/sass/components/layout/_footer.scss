@@ -1,7 +1,9 @@
 .footer{
-    position: relative;
+   position: relative;
+   bottom:-100rem;
+   width: 100%;
     padding: 2rem 0 !important;
-    background-color: $light-tuta-color;
+    //background-color: $light-tuta-color;
     height: 40rem;
    
     &_logo{  
@@ -17,21 +19,22 @@
         
     }
     &_asaf{
+  
         height:12rem;
-        position: absolute;
-        bottom: 0;
+        
         width: 100%;
        
         background-color:#293039;
         text-align: center;
-        padding: 1rem 0;
+        padding: 2rem 0;
         @media screen and (max-width:960px){
-            height: 4rem;
-           
+            height: 12rem;
+            width: 37rem;
+           margin-right: 3.5rem;
         }
         &-img{
             height:10rem;
-            width: 12rem;
+            width:12rem;
          
             @media screen and (max-width:960px){
                 height: 10rem;

@@ -1,10 +1,8 @@
 import React,{useState} from 'react'
+import Sales from './Sales';
 
 
-const style = {
-    background: 'linear-gradient(to bottom,rgba(248, 246, 233, 0.7),rgba(109, 55, 43, 1))'
-}
-const mobile = window.innerWidth <= 960 ? true : false;
+
 
 const Special = () => {
     const [special,setSpecial] = useState(true);
@@ -27,7 +25,7 @@ const Special = () => {
         setNews(false);
     } 
     return (
-        <section className="special py-5" id="special" style={style}>
+        <section className="special py-5" id="special" >
             <div className="special_headers">
                 <div className={special ? "special_headers-header active" : "special_headers-header"} onClick={specialsClick}>
                     <h4>מבצעים</h4>
@@ -40,8 +38,10 @@ const Special = () => {
                 </div>
                
             </div>
-            <div className="special_container container mt-5">
-                <h5 className={special?"present":"none"}>מבצעים</h5>
+            <div className={special? "special_container-sales mt-5" : "special_container container mt-5"}>
+                <div className={special?"present container-fluid special_sales":"none"}>
+                    <Sales  />
+                </div>
                 <h5 className={news? "present": "none"}>חדשים</h5>
                 <h5 className={recomend? "present": "none"}>מומלצים</h5>
             </div>

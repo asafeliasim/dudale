@@ -9,6 +9,7 @@ import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
 import chocolateBG from './asserts/img/chocolatsbg.jpeg';
 import Products from './pages/Products';
 import IceCreamProducts from './pages/IceCreamProducts';
+import IceCreamTypaPage from './pages/IceCreamTypaPage';
 
 import fruits from './data/fruits';
 import drinks from './data/drinks';
@@ -16,11 +17,13 @@ import creams from './data/creams';
 import snacks from './data/snacks';
 
 
-import snacksbg from './asserts/img/snacks/snacksbg.jpeg';
-import creamsbg from './asserts/img/creams/creams.jpeg';
-import fruitsbg from './asserts/img/fruits/fruitsbg.jpeg';
+import snacksbg from './asserts/img/snacks/snacksbg.jpg';
+import creamsbg from './asserts/img/creams/creams.png';
+import fruitsbg from './asserts/img/fruits/fruitdrinks.png';
 
-import drinksbg from './asserts/img/drinks/drinksbg.jpeg';
+import drinksbg from './asserts/img/drinks/drinksbg.png';
+
+const mobile = window.innerWidth <= 960 ? true : false;
 
 const App = () => {
   const [scroll,setScroll] = useState(false);
@@ -39,6 +42,7 @@ const App = () => {
       }
     }
   }
+  // {!mobile ? <Footer /> : null} 
   return (
       <>
       
@@ -54,11 +58,12 @@ const App = () => {
           <Route path="/drinks" render={()=><Products products={drinks} img={drinksbg}/>}/>
           <Route path="/snacks" render={()=><Products products={snacks} img={snacksbg} />}/>
           <Route path="/creams" render={()=><Products products={creams} img={creamsbg} col={4}/>}/>
+          <Route path="/icecreams/:title" component={IceCreamTypaPage}/>
           <Route path="/icecreams" render={()=><IceCreamProducts />}/>
       </Switch>
       </Router>
     
-    <Footer /> 
+   
     </>
   
    

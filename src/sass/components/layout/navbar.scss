@@ -16,12 +16,13 @@
     &_link{
         color: $dark-color;
         text-decoration: none;
-        //font-family: 'primaryHeaderFont';
+        font-family: 'nootHeader';
         &:hover{
             color: $tuta-color;
         }
     }
     &_phoneLink{
+        font-family: 'nootHeader';
         color: $dark-color;
         text-decoration: none;
         &:hover{
@@ -69,6 +70,7 @@
         padding-left: 1rem;
         margin-bottom: 5rem;
         text-decoration: none;
+        font-family: 'nootHeader';
         color: $dark-color;
         transition: $transition;
         &:hover{
@@ -83,7 +85,7 @@
         display: none;
         @media screen and (max-width:960px){
             display: block;
-            margin-left: 2rem;
+            margin-left: 5rem;
             margin-top: 3rem;
             margin-bottom: 6rem;
             font-size: 3.4rem;
@@ -99,7 +101,7 @@
         left:-100%;
         opacity: 1;
         //transition: $transition;
-      
+       
         //align-content: center;
         align-items: center;
         justify-content: center;
@@ -109,6 +111,7 @@
             font-size: 3rem;
             font-weight: bold; 
             color: $dark-color;
+           
             cursor: pointer;
             &:hover{
                background-color: $tuta-color;
@@ -123,7 +126,7 @@
         flex-direction: column;   
         width: 100%;
         height: 30rem;
-        background-color: $light-tuta-color;
+        background-color: $tuta-color;
         top:10rem;
         left:0;
         opacity: 1;  
@@ -137,7 +140,10 @@
 }
 
 .white{
-    background-color: $light-tuta-color;
+    background-color: $tuta-color;
+   a{
+       color: $cream-color!important;
+   }
 }
 /* .navbar{
     padding:0 3rem;
@@ -201,4 +207,71 @@
 }
 .slick-arrow{
     display: none!important;
+}
+.icecream_nav{
+    height: 3rem;
+    position: fixed;
+    padding: 1rem 0;
+    background-color: $cream-color;
+    top:10rem;
+    //display: flex;
+    width: 100%;
+    //justify-content: center;
+
+    &-list{
+        height: 1rem;
+        align-items: center;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+       
+        //margin: 0 auto;
+    }
+    &-item{
+        position: relative;
+        display: inline-block;
+        font-size: 1.4em;
+        color: $dark-color;
+        padding: 0 4rem;
+        //border-left: .1rem solid $tuta-color;
+        cursor: pointer;
+        &:hover{
+            background-color: $tuta-color;
+        }
+    }
+
+    &-divider{
+        border-top: .2rem solid $tuta-color;
+    }
+}
+.drop{
+    display: none;
+    position: absolute;
+    right: 5rem;
+    top: 10rem;
+    background-color: #fff;
+    min-width: 18rem;
+    box-shadow: 10px .8rem 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    &:hover{
+        display: table-row;
+    }
+    a{
+        padding: .1rem 0;
+        margin: 0 auto;
+        text-decoration: none;
+        color: $dark-color;
+    }
+    &:first-child{
+        padding-top: 1rem;
+    }
+    &:last-child{
+        padding-bottom: 1rem;
+    }
+}
+.shtraous{
+    &:hover .drop{
+        display: flex;
+        flex-direction: column;
+    }
 }

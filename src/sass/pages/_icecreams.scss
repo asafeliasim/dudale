@@ -1,0 +1,101 @@
+.ice{
+    //background-color: #fff!important;
+
+    &_row{
+        height: 60rem;
+        align-items: center;
+
+        &-col{
+           margin: o auto;
+           display: flex; 
+           justify-content: center;
+        }
+    }
+}
+.icecreams{
+   
+    &_model{ 
+        position: absolute;
+        
+        padding: .2rem;
+        width: 30rem;
+        margin: 0 auto;
+        z-index: 1;
+        box-shadow: .1rem .2rem .8rem 0px $dark-color;
+        background-color: $tuta-color;
+        
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        &-img{
+            overflow: hidden;
+        }
+        &-items{
+           min-width: 10rem;
+         
+            // margin: 0 auto;
+                display: none;
+                //position: absolute; 
+           a{
+            text-decoration: none;
+           }    
+        }
+        &:hover{
+            &-items{
+                display: block;
+            }
+         }
+        &-item{
+            //border-bottom: .2rem solid $dark-color;
+           padding: 0 2rem;
+            //padding: .5rem;
+            letter-spacing: 0.2rem;
+            margin-bottom: 1rem;
+            &:hover{
+                background-color: $cream-color;
+              span{
+                color: $tuta-color;
+               } 
+               a h2{
+                color: $tuta-color;
+               }
+            }
+            
+            h2{
+                font-size: 1.8rem;
+                //font-family:"nootHeader";
+                text-align: center;
+                font-weight: bold;
+                color: $cream-color;
+                //font-weight: bold;
+                //font-family: "primaryHeaderFont";
+            }
+        }
+        &-icon{
+            margin-right: 2rem;
+            color: $cream-color;
+            font-size: 2rem;
+        }
+        &-divder{
+            border-top: 1rem solid $tuta-color;
+           
+        }
+    }
+    }
+
+ .icecreams_model:hover .icecreams_model-items{
+     
+     display: block;
+ }
+ .slick-dots{
+     @media screen and(max-width:960px){
+         left:-4rem!important;
+
+     }
+ }
+ .slick-slide {
+     img{
+        @media screen and(max-width:960px){
+            margin-left: 4.5rem;
+        }
+     }
+ }

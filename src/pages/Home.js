@@ -5,6 +5,7 @@ import Menu from '../components/menu/Menu';
 import Special from '../components/special/Special';
 import Divider from '../components/layout/Divider';
 
+import Footer from '../components/layout/footer/Footer';
 
 
 
@@ -16,6 +17,7 @@ const Home = () => {
             <Menu />
             <Divider />
             <Special />
+            <Footer />
         </div>
     )
 }

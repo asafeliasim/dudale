@@ -3,6 +3,10 @@
     src: url('../../asserts/fonts/Noot\ Regular.ttf')format('ttf');
     
 }
+@font-face{
+    font-family: 'nootHeader';
+    src: url('../../asserts/fonts/noot-aj.woff')format('woff');
+}
 
 // sizes 
 $nav-links-mobile: 2.4rem;

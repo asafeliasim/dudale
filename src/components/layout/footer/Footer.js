@@ -28,7 +28,7 @@ import werthers from "../../../asserts/img/firmas/werther's.png";
 import hersheys from '../../../asserts/img/firmas/hersheys.png'
 import Slider from "react-slick";
 
-import bgMobileImg from '../../../asserts/img/backgroundfooter.png';
+
 
 
 
@@ -38,7 +38,7 @@ import asafLogo from '../../../asserts/img/smallLogo.png';
 
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Divider from '../Divider';
+
 
 const firmas = [
  
@@ -48,7 +48,7 @@ const firmas = [
     {id:19,index:18,img: `${rigel}`},{id:20,index:19,img: `${shtraous}`},{id:21,index:20,img: `${snickers}`},{id:22,index:21,img:`${snyders}`},{id:23,index:22,img: `${starbuks}`},{id:24,index:23,img: `${timtam}`},
     {id:25,index:24,img: `${tobleron}`},{id:26,index:25,img: `${werthers}`},{id:27,index:26,img:hersheys}
 ]
-
+/* 
 const mobile = window.innerWidth <= 960 ? true : false;
 
 const bgStyle = {
@@ -63,9 +63,9 @@ const bgMobileStyle = {
     height: 'auto'
 
         //backgroundSize: '100rem'
-}
+} */
 const settingsThumbs = window.innerWidth > 960 ? {
-    slidesToShow: 6,
+    slidesToShow: 8,
     slidesToScroll:6,
     asNavFor: '.slider-for',
     //dots: true,
@@ -103,9 +103,9 @@ const Footer = () => {
    
 
     return (
-        <footer className="container-fluid footer" style={mobile? bgMobileStyle :bgStyle}>
-            <div className="container py-5">
-                <div className="mt-5">
+        <footer className="footer">
+            <div className="container-fluid py-5">
+                <div className="my-5">
                     <div className="slider-wrapper py-5">
                         <div className="thumbnail-slider-wrap mt-4">
                             <Slider
@@ -128,7 +128,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer_asaf">
+            <div className="footer_asaf mt-3">
                 <div className="d-flex justify-content-center">
               
                     <div className="footer_asaf-dsc mt-4">

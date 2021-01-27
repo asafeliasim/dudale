@@ -1,12 +1,14 @@
 import React, { useEffect,useState } from 'react'
 import logo from '../../../asserts/img/dudalogo.png';
-import {LinkContainer} from 'react-router-bootstrap';
+
 import { useLocation,useHistory} from 'react-router-dom';
+
+
 const mobile = window.innerWidth <= 960 ? true: false;
-const logoMobileStyle = {
+/* const logoMobileStyle = {
     maxWidth:'20rem',
     height:'12rem'
-}
+} */
 const Navbar = () => {
     const [navbar,setNavbar] = useState(false);
     const [hamburgerClicked,setHamburgerClicked] = useState(false);
@@ -33,8 +35,7 @@ const Navbar = () => {
        }
     }
     const copyNumber = () => {
-        var number = "0546384221";
-       
+      
 
         document.execCommand('מועתק');
 
@@ -60,8 +61,11 @@ const Navbar = () => {
     
     window.addEventListener('scroll',changeBackground);
     return (
+        <>
         <nav className={navbar || mobile? "nav white":"nav"}>
-            <img className="nav_logo" src={logo} />   
+            <a href="#">
+                <img className="nav_logo" src={logo} />   
+            </a>
                 <div className="nav_icon" onClick={hamburgerClick}>
                  <i className={hamburgerClicked? icons[0]: icons[1]}  />
                 </div>
@@ -85,17 +89,17 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <ul className="nav_items">
-                    <li className="nav_items-item" onClick={location.pathname != "/" ? backToHome : null}>
+                    <li className="nav_items-item" onClick={location.pathname !== "/" ? backToHome : null}>
                         <a className="nav_link" href="#head" href={"#head"}>
                             ראשי
                         </a>   
                     </li>
-                    <li className="nav_items-item" onClick={location.pathname != "/" ? backToHome : null}>
+                    <li className="nav_items-item" onClick={location.pathname !== "/" ? backToHome : null}>
                         <a className="nav_link" href="#productsection" >
                         המוצרים שלנו
                         </a>
                     </li>
-                    <li  className="nav_items-item">
+                    <li  className="nav_items-item" onClick={location.pathname !== "/" ? backToHome : null}>
                         <a className="nav_link" href="#special">
                          המבצעים
                          </a>
@@ -108,9 +112,9 @@ const Navbar = () => {
             </h2>
             </a>
 
-            
-           
         </nav>
+      
+        </>
     )
 }
 export default Navbar;
