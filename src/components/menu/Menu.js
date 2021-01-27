@@ -26,7 +26,7 @@ const Menu = () => {
             
             <div className="container products">
                 <div className="row mx-auto">
-                    <div className="col-6 col-md-4 my-5">
+                    <div className="col-12 col-lg-4 my-5">
                         <LinkContainer to="/creams" style={style}>  
                             <div className="box">
                                 <div className="box_img">
@@ -35,7 +35,7 @@ const Menu = () => {
                             </div> 
                         </LinkContainer>
                     </div>
-                    <div className="col-6 col-md-4 my-5">
+                    <div className="col-12 col-lg-4 my-5">
                     <LinkContainer to="/icecreams" style={style}>  
                     <div className="box">
                         <div className="box_img">
@@ -45,7 +45,7 @@ const Menu = () => {
                     </div> 
                     </LinkContainer>
                     </div>
-                    <div className="col-6 col-md-4 my-5">
+                    <div className="col-12 col-lg-4 my-5">
                         <LinkContainer to="/snacks" >  
                             <div className="box">
                                 <div className="box_img" style={{height:'24rem!important'}}>
@@ -55,7 +55,7 @@ const Menu = () => {
                         </LinkContainer>
                     </div>
                 
-                    <div className="col-6 col-md-4 my-5">
+                    <div className="col-12 col-lg-4 my-5">
                     <LinkContainer to="/chocolats/#products" style={style}>  
                     <div className="box">
                         <div className="box_img">
@@ -65,7 +65,7 @@ const Menu = () => {
                     </div> 
                     </LinkContainer>
                     </div>
-                    <div className="col-6 col-md-4 my-5">
+                    <div className="col-12 col-lg-4 my-5">
                     <LinkContainer to="/drinks" style={style}>  
                     <div className="box">
                         <div className="box_img">
@@ -74,7 +74,7 @@ const Menu = () => {
                     </div> 
                     </LinkContainer>
                     </div>
-                    <div className="col-6 col-md-4 my-5">
+                    <div className="col-12 col-lg-4 my-5">
                         <LinkContainer to="/fruits" style={style}>  
                         <div className="box">
                             <div className="box_img">

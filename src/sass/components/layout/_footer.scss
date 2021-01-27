@@ -25,6 +25,9 @@
             width: 37.5rem;
            //margin-right: 3rem;
         }
+        @media screen and (max-width:414px){
+            width: 41.5rem;
+        }
         &-img{
             height:10rem;
             width:12rem;
