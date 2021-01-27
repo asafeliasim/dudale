@@ -10,34 +10,27 @@
         padding: 12rem 2rem;
        position: relative;
     }
-    &_dsc{
-      position: absolute;
-      left: 10rem;
-      top: 68%;
-      color: $dark-color;
-      font-size: 2.4rem;
-        
-    }
+
     &_asaf{
   
         height:12rem;
         
         width: 100%;
-       
+      
         background-color:#293039;
         text-align: center;
         padding: 2rem 0;
         @media screen and (max-width:960px){
             height: 12rem;
-            width: 37rem;
-           margin-right: 3.5rem;
+            width: 37.5rem;
+           //margin-right: 3rem;
         }
         &-img{
             height:10rem;
             width:12rem;
          
             @media screen and (max-width:960px){
-                height: 10rem;
+                height: 8rem;
                 margin-right: 1rem;
             }           
         } 
@@ -48,7 +41,7 @@
             margin-left: 2rem;
             color: #eeeeee;
             @media screen and (max-width:960px){
-                font-size: 1.6rem;
+                font-size: 1.2rem;
                 margin-right: 1rem;
 
             }

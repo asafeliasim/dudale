@@ -38,15 +38,14 @@ const Sales = () => {
         slidesToShow: show,
         slidesToScroll: move,
         rows:3,
-        nextArrow: <SampleNextArrow style={{width:'30rem'}}/>,
-        prevArrow: <SamplePrevArrow />
+     
         
       };
     return (
         
       <>
         
-        <Slider {...settings}>
+         <Slider {...settings}>
         {iceCreamsSalesData.map((sale)=> 
             <div key={sale.id}>
               <img src={sale.img} alt="" style={{width:'20rem'}}/>
@@ -54,7 +53,7 @@ const Sales = () => {
           )}
          
         </Slider>
-     
+      
       </> 
     )
 }

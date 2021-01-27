@@ -95,7 +95,8 @@
  .slick-slide {
      img{
         @media screen and(max-width:960px){
-            margin-left: 4.5rem;
+            //margin: 0 auto;
+           margin-left: 4.5rem;
         }
      }
  }

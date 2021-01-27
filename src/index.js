@@ -5,7 +5,7 @@ import App from './App';
 
 import './sass/main.scss'
 ReactDOM.render(
-  <div dir="rtl">
+  <div dir="rtl" style={{overflowX:'hidden'}}> 
     <App />
   </div>,
   document.getElementById('root')
