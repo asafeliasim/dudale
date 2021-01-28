@@ -79,7 +79,7 @@ const IceCreamMenue = () => {
         <>
         <div className="container py-2 mb-5 ice">
             <div className="row mx-auto ice_row mt-5">
-                <div className="col-12 col-md-6 ice_row-col ">
+                <div className="col-10 col-md-6 ice_row-col">
                     <div className={shtraus ? "icecreams_model shtraus" : "icecreams_model "}>
                         <div className="d-flex justify-content-center" onClick={shtrausClicked}> 
                             <img src={shtraws} alt="" style={{width:'20rem',margin:'0 4rem'}}/> 
@@ -91,7 +91,7 @@ const IceCreamMenue = () => {
                     </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-6 ice_row-col">
+                <div className="col-10 col-md-6 ice_row-col">
                     <div className={feldman ? "icecreams_model feldman": "icecreams_model"}>
                         <div className="d-flex justify-content-center" onClick={feldmanClicked}> 
                             <img src={fldman} alt="" style={{width:'20rem',margin:'0 4rem'}}/> 
@@ -105,7 +105,7 @@ const IceCreamMenue = () => {
                 </div>     
            </div> 
            <div className="row mx-auto ice_row">
-                <div className="col-12 col-md-6 ice_row-col ">
+                <div className="col-10 col-md-6 ice_row-col ">
                 <div className={nestle ? "icecreams_model nestle" : "icecreams_model"}>
                         <div className="d-flex justify-content-center" onClick={nestleClicked}> 
                             <img src={nestleIMG} alt="" style={{width:'20rem',margin:'0 4rem'}}/> 
@@ -117,7 +117,7 @@ const IceCreamMenue = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-12 col-md-6 ice_row-col">
+                <div className="col-10 col-md-6 ice_row-col">
                     <div className={brands ? "icecreams_model brands":"icecreams_model"}>
                             <div className="d-flex justify-content-center" onClick={brandsClicked}> 
                                 <img src={motagim} alt="" style={{width:'20rem',margin:'0 4rem'}}/> 

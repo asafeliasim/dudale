@@ -17,7 +17,7 @@ const Home = () => {
             <Menu />
             <Divider />
             <Special />
-            <Footer />
+           
         </div>
     )
 }

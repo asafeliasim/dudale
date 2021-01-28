@@ -1,0 +1,20 @@
+.menu{
+    margin-top: 25rem!important;
+
+    &-title{
+        font-family: 'nootHeader';
+        font-size: 5rem;
+        color: $dark-color;
+        text-shadow: .2rem .3rem .5rem #777;
+
+        @media screen and (max-width:960px){
+
+            font-size: 2.4rem;
+        }
+        
+    }
+    @media screen and (max-width:960px){
+                        
+       margin-top: 20rem!important;
+    }
+}

@@ -62,7 +62,7 @@ const App = () => {
           <Route path="/icecreams" render={()=><IceCreamProducts />}/>
       </Switch>
       </Router>
-    
+      <Footer />
    
     </>
   

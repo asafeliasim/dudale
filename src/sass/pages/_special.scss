@@ -1,5 +1,15 @@
 .special{
    
+    &_sale{
+        &-img{
+            width: 20rem;
+            @media screen and (max-width:960px){
+                width: 12rem;
+                margin-left: 10rem!important;
+            }
+        }
+     
+    }
     &_headers{
         margin: 0;
         display: flex;

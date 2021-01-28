@@ -2,7 +2,10 @@
 
    &_title{
        font-size: 6rem;
-       color: $dark-color;
+       color: $dark-color; 
    }
-
+   @media screen and(max-width:1200px){
+        padding-bottom: 10rem;
+        
+    }   
 }

@@ -26,7 +26,7 @@ const Navbar = () => {
     const backToHome = () => history.push('/');
     const changeBackground = () => {
      
-       if(window.scrollY > 400){
+       if(window.scrollY > 100){
            setNavbar(true)
 
        }else{

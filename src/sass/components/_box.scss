@@ -47,6 +47,7 @@
         display: flex;
         //width: 25rem;
         justify-content: center;
+      
     }
     @media screen and(max-width:960px){
         max-height: 22rem;
@@ -58,6 +59,9 @@
     @media screen and(max-width:960px){
         float: none;
         width: 100%;
+    }
+    @media screen and(max-width:640px){
+        max-width: 12rem;
     }
 }
 

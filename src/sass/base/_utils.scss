@@ -1,10 +1,11 @@
 .divider{
-    //color:$tuta-color;
-    
-    //border-top: .1rem solid  $tuta-color;
- 
-   
-   
+    hr{
+       border-top: $tuta-color;
+    } 
+
+       
+        
+
 }
 
 .div{
@@ -15,7 +16,8 @@
     margin: 0 auto;
 
     @media screen and(max-width:960px){
-        width: 15rem;
+        width: 10rem;
+        margin-top: -2rem;
         height: .5rem;
     }
 }
