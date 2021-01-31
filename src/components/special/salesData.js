@@ -28,10 +28,25 @@ import SOLEROBAR from '../../asserts/sales/icecream/SOLEROBAR.png';
 
 //import SOLEROTROPIC from '../../asserts/sales/icecream/SOLEROTROPIC.png';
 import SOLEROTROPIC1 from '../../asserts/sales/icecream/SOLEROTROPIC1.png';
-
 import sorve from '../../asserts/sales/icecream/sorve.png';
 import TIMEOUT from '../../asserts/sales/icecream/TIMEOUT.png';
 import yogipri from '../../asserts/sales/icecream/yogipri.png';
+
+
+
+// import recommended
+import lotusicecreamrec from '../../asserts/recommended/lotusicecreamrec.png';
+import milkarec from '../../asserts/recommended/milkarec.png';
+import milkywayrec from '../../asserts/recommended/milkywayrec.png';
+import snickerswhiteicecreamrec from '../../asserts/recommended/snickerswhiteicecreamrec.png';
+import twinkiesrec from '../../asserts/recommended/twinkiesrec.png';
+
+// import news
+
+import cotedor from '../../asserts/new/cotedor.png';
+import deepriver from '../../asserts/new/deepriver.png';
+import newMagnum from '../../asserts/new/magnum.png';
+import timtam from '../../asserts/new/timtam.png';
 
 export const iceCreamsSalesData = [
     {id:1,img:AVTIAHMELON},{id:2,img:BENJERRYS},{id:3,img:corneto},{id:4,img:corneto2},{id:5,img:CRUNCH},{id:6,img:extreme},
@@ -40,3 +55,12 @@ export const iceCreamsSalesData = [
     {id:19,img:marasim},{id:20,img:minimegaton},{id:21,img:OREOKOKILIDA},{id:22,img:PZPZIMMTARAMASTIGUM},{id:23,img:russia},{id:24,img:SHOKOBO3},
     {id:25,img:SOLEROBAR},{id:27,img:SOLEROTROPIC1},{id:28,img:sorve},{id:29,img:TIMEOUT},{id:30,img:yogipri}
 ]
+
+export const recommendedItems = [
+    {id:1,img:lotusicecreamrec},{id:2,img:milkarec},{id:3,img:milkywayrec},{id:4,img:snickerswhiteicecreamrec},{id:5,img:twinkiesrec}
+]
+
+export const newItems = [
+    {id:1,img:cotedor},{id:2,img:deepriver},{id:3,img:newMagnum},{id:4,img:timtam}
+]
+

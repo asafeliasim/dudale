@@ -13,6 +13,10 @@
     z-index: 10;
     top: 0;
     background-color: transparent;
+
+    @media screen and (max-width:960px){
+        height: 8rem;
+    }
     &_link{
         color: $dark-color;
         text-decoration: none;
@@ -37,10 +41,10 @@
         max-height:20rem;
         cursor: pointer;
         @media screen and(max-width:960px){
-            //margin-top: 0.5px;
-            padding-top: 1.8rem;
-            max-width: 20rem;
-            max-height: 14rem;
+            //margin-top: 0.1px;
+            padding-top: .8rem;
+            max-width: 14rem;
+            max-height: 10rem;
         }
     }
     &_items{
@@ -86,10 +90,10 @@
         display: none;
         @media screen and (max-width:960px){
             display: block;
-            margin-left: 5rem;
-            margin-top: 3rem;
+            margin-left: 2rem;
+            margin-top: 2rem;
             margin-bottom: 6rem;
-            font-size: 3.4rem;
+            font-size: 3rem;
             color: $dark-color;
             cursor: pointer;
         }

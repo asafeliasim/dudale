@@ -56,9 +56,11 @@
     width: 25rem;
     @media screen and(max-width:960px){
         float: none;
-        width: 100%;
+        width: 12rem;
+        height: 12rem;
     }
     @media screen and(max-width:640px){
+        height: 12rem;
         height: 12rem;
     }
 }

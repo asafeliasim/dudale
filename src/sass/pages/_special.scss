@@ -1,11 +1,15 @@
 .special{
-   
+    height: 70rem;
+    @media screen and(max-width:960px){
+        height: 50rem;
+    }
     &_sale{
         &-img{
             width: 20rem;
             @media screen and (max-width:960px){
                 width: 12rem;
-                margin-left: 10rem!important;
+                margin-top: 5rem;
+                margin-left: 8rem!important;
             }
         }
      
@@ -14,7 +18,9 @@
         margin: 0;
         display: flex;
         justify-content: center;
+       
         &-header{
+           
             margin: 5rem 0;
             padding: .8rem 2rem;
             background-color:$tuta-color;
@@ -73,6 +79,7 @@
     position: absolute;
     left: -100%;
     font-size: 5rem;
+    display: none;
 }
 .present{
     position: absolute;
@@ -81,8 +88,50 @@
     font-size: 5rem;
 }
 
-.recomends{
-    position: absolute;
-    left: -100%;
-    font-size: 5rem;
+.recomend{
+    height: 80rem;
+    padding-bottom: 10rem;
+    margin-right: 15rem;
+    
+    &_col{
+        @media screen and(max-width:960px){
+          
+            //margin-right: 0;
+            margin-left: 20rem!important;
+            //margin-right: 6rem!important;
+        }
+    }
+    &_img{
+        @media screen and(max-width:960px){
+            width: 20rem!important;
+            //margin-right: 6rem!important;
+            margin-left: 25rem;
+            padding-left: 5rem;
+        }
+    }
+   
+}
+.news{
+    height: 80rem;
+    padding-bottom: 10rem;
+    margin-right: 15rem;
+    @media screen and (max-width:960px) {
+      
+    }
+    &_col{
+        @media screen and(max-width:960px){
+          
+            //margin-right: 0;
+            margin-left: 15rem!important;
+            //margin-right: 6rem!important;
+        }
+    }
+    &_img{
+        @media screen and(max-width:960px){
+            width: 20rem!important;
+            //margin-right: 6rem!important;
+            margin-left: 25rem;
+            padding-left: 7rem;
+        }
+    }
 }

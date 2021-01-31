@@ -30,7 +30,7 @@ const move = mobile ? 1 : 3;
     );
   }
   
-const Sales = () => {
+const Sales = ({products}) => {
     const settings = {
         dots: true,
         infinite: true,
@@ -46,7 +46,7 @@ const Sales = () => {
       <>
         
          <Slider {...settings}>
-        {iceCreamsSalesData.map((sale)=> 
+        {products.map((sale)=> 
             <div key={sale.id}>
               <img src={sale.img} alt="" className="special_sale-img"/>
             </div>
