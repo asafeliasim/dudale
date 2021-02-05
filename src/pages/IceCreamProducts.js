@@ -17,9 +17,7 @@ const bgStyle = {
 const IceCreamProducts = () => {
     return (
         <section className="chocolats" >
-            <div style={bgStyle}>
-       
-            </div>
+            
             <IceCreamMenue />  
         </section>
         

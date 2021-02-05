@@ -1,0 +1,39 @@
+.modal{
+ 
+
+    &_close{
+        display: none;
+    }
+    &_open{
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 10%;
+        height: 80rem;
+        width: 80rem; 
+        z-index: 100;
+   
+        background: white;
+        box-shadow: 0 2px 18px 10000px rgba(0, 0, 0, 0.7);
+        border-radius: 8px;
+
+        &-img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            @media screen and (max-height:760px){
+                height: 100%;
+            }
+       
+        }
+
+        @media screen and (max-height:760px){
+            top:10%;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 60rem!important;
+            width: 60rem; 
+        }
+    }
+
+}

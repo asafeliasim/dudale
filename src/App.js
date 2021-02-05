@@ -23,18 +23,22 @@ import fruitsbg from './asserts/img/fruits/fruitdrinks.png';
 
 import drinksbg from './asserts/img/drinks/drinksbg.png';
 
+import Modal from './components/layout/Modal';
+
 const mobile = window.innerWidth <= 960 ? true : false;
 
 const App = () => {
   const [scroll,setScroll] = useState(false);
+ 
   useEffect(() => {
     window.addEventListener('scroll',handleScroll);
   }, [])
 
   const handleScroll = () => {
-    if(window.scrollY > 1){
+    if(window.scrollY > 10){
       if(!scroll){
         setScroll(true)
+      
       }else{
         if(scroll){
           setScroll(false);
@@ -49,6 +53,7 @@ const App = () => {
       <div className="social">
       <Social />
       </div> 
+     
       <Router>
       <Navbar />
         <Switch>
@@ -58,8 +63,8 @@ const App = () => {
           <Route path="/drinks" render={()=><Products products={drinks} img={drinksbg}/>}/>
           <Route path="/snacks" render={()=><Products products={snacks} img={snacksbg} />}/>
           <Route path="/creams" render={()=><Products products={creams} img={creamsbg} col={4}/>}/>
-          <Route path="/icecreams/:title" component={IceCreamTypaPage}/>
-          <Route path="/icecreams" render={()=><IceCreamProducts />}/>
+          <Route path="/icecreams" render={()=><IceCreamProducts />} exact/>
+          <Route path="/icecreams/:title" render={()=><IceCreamTypaPage/>}/>
       </Switch>
       </Router>
       <Footer />

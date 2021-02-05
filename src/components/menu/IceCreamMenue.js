@@ -77,14 +77,14 @@ const IceCreamMenue = () => {
     
     return (
         <>
-        <div className="container py-2 mb-5 ice">
+        <div className="container mb-5 ice">
             <div className="row mx-auto ice_row mt-5">
                 <div className="col-10 col-md-6 ice_row-col">
                     <div className={shtraus ? "icecreams_model shtraus" : "icecreams_model "}>
                         <div className="d-flex justify-content-center" onClick={shtrausClicked}> 
                             <img src={shtraws} alt="" style={{width:'20rem',margin:'0 4rem'}}/> 
                         </div>
-                    <div className={shtraus ? "icecreams_model-items mt-5" : "shtraus_none"}>           
+                    <div className={shtraus ? "icecreams_model-items " : "shtraus_none"}>           
                         {shtrawsTypes.map(type=> 
                             <IceCreamHeader key={type.id} type={type} /> 
                         )}           
