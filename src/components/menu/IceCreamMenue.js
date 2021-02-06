@@ -5,7 +5,7 @@ import motagim from '../../asserts/img/iceCreamsFirma/motagim.png';
 import nestleIMG from '../../asserts/img/iceCreamsFirma/nestle.png';
 import {shtrawsTypes,nestleTypes,feldmanTypes,modelsTypes} from '../../data/icecreamstype';
 import IceCreamHeader from '../icecream/IceCreamHeader';
-import Footer from '../layout/footer/Footer';
+
 
 const models = [
     {
@@ -82,7 +82,7 @@ const IceCreamMenue = () => {
                 <div className="col-10 col-md-6 ice_row-col">
                     <div className={shtraus ? "icecreams_model shtraus" : "icecreams_model "}>
                         <div className="d-flex justify-content-center" onClick={shtrausClicked}> 
-                            <img src={shtraws} alt="" style={{width:'20rem',margin:'0 4rem'}}/> 
+                            <img src={shtraws} alt="" style={{width:'20rem',margin:'0 4rem'}} className="icecream-img"/> 
                         </div>
                     <div className={shtraus ? "icecreams_model-items " : "shtraus_none"}>           
                         {shtrawsTypes.map(type=> 
@@ -94,7 +94,7 @@ const IceCreamMenue = () => {
                 <div className="col-10 col-md-6 ice_row-col">
                     <div className={feldman ? "icecreams_model feldman": "icecreams_model"}>
                         <div className="d-flex justify-content-center" onClick={feldmanClicked}> 
-                            <img src={fldman} alt="" style={{width:'20rem',margin:'0 4rem'}}/> 
+                            <img src={fldman} alt="" style={{width:'20rem',margin:'0 4rem'}} className="icecream-img"/> 
                         </div>
                         <div className={feldman ? "icecreams_model-items mt-5": "feldman_none"}>           
                             {feldmanTypes.map(type=> 
@@ -108,7 +108,7 @@ const IceCreamMenue = () => {
                 <div className="col-10 col-md-6 ice_row-col ">
                 <div className={nestle ? "icecreams_model nestle" : "icecreams_model"}>
                         <div className="d-flex justify-content-center" onClick={nestleClicked}> 
-                            <img src={nestleIMG} alt="" style={{width:'20rem',margin:'0 4rem'}}/> 
+                            <img src={nestleIMG} alt="" style={{width:'20rem',margin:'0 4rem'}} className="icecream-img"/> 
                         </div>
                         <div className={nestle ? "icecreams_model-items mt-5": "nestle_none"}>           
                             {nestleTypes.map(type=> 
@@ -120,7 +120,7 @@ const IceCreamMenue = () => {
                 <div className="col-10 col-md-6 ice_row-col">
                     <div className={brands ? "icecreams_model brands":"icecreams_model"}>
                             <div className="d-flex justify-content-center" onClick={brandsClicked}> 
-                                <img src={motagim} alt="" style={{width:'20rem',margin:'0 4rem'}}/> 
+                                <img src={motagim} alt="" style={{width:'20rem',margin:'0 4rem'}} className="icecream-img"/> 
                             </div>
                             <div className={brands ? "icecreams_model-items mt-5": "brands_none"}>           
                                 {modelsTypes.map(type=> 

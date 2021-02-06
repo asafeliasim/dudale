@@ -17,7 +17,7 @@ import magnummini3 from './images/magnum/magnummini3.png';
 import magnumminidouble1 from './images/magnum/magnumminidouble1.png';
 import magnumminidouble2 from './images/magnum/magnumminidouble2.png';
 import magnumminidouble3 from './images/magnum/magnumminidouble3.png';
-
+import magnum9 from './images/magnum/magnum9.png';
 // tilon 
 import corneto from './images/tilon/corneto.png';
 import corneto1 from './images/tilon/corneto1.png';
@@ -33,7 +33,7 @@ import SOLEROBAR from './images/shtrous/SOLEROBAR.png';
 import SOLEROSORVE from './images/shtrous/SOLEROSORVE.png';
 import SOLEROTROPIC from './images/shtrous/SOLEROTROPIC.png';
 import SOLEROTROPICBIG from './images/shtrous/SOLEROTROPICBIG.png';
-
+import SOLEROstrowberry from './images/shtrous/SOLEROstrowberry.png';
 // methopa
 import MAZOPA1 from './images/shtrous/MAZOPA1.png';
 import MAZOPA2 from './images/shtrous/MAZOPA2.png';
@@ -50,6 +50,7 @@ import MASTIGUM from './images/shtrous/kids/MASTIGUM.png';
 import MELON from './images/shtrous/kids/MELON.png';
 import MTRA from './images/shtrous/kids/MTRA.png';
 import PZPZIM from './images/shtrous/kids/PZPZIM.png';
+import LOL from './images/shtrous/kids/LOL.png';
 
 // snacks 
 import TIMEOUT from './images/shtrous/snacks/TIMEOUT.png';
@@ -90,7 +91,7 @@ export const shtrausMagnum = [
     {id:1,img:magnum},{id:2,img:magnum1},{id:3,img:magnum2},{id:4,img:magnum3},{id:5,img:magnum4},
     {id:6,img:magnum5},{id:7,img:magnum6},{id:8,img:magnum7},{id:9,img:magnum8},{id:10,img:magnumBIG1},
     {id:11,img:magnumBIG2},{id:12,img:magnumBIG3},{id:13,img:magnumBIG4},{id:14,img:magnummini1},{id:15,img:magnummini2},
-    {id:16,img:magnummini3},{id:17,img:magnumminidouble1},{id:18,img:magnumminidouble2},{id:19,img:magnumminidouble3}
+    {id:16,img:magnummini3},{id:17,img:magnumminidouble1},{id:18,img:magnumminidouble2},{id:19,img:magnumminidouble3},{id:20,img:magnum9}
 ]
 export const tilons = [
     {id:1,img:corneto},{id:2,img:corneto1},{id:3,img:corneto2},{id:4,img:corneto3},
@@ -98,7 +99,7 @@ export const tilons = [
     
 ]
 export const soleros = [
-    {id:1,img:SOLEROBAR},{id:2,img:SOLEROSORVE},{id:3,img:SOLEROTROPIC},{id:4,img:SOLEROTROPICBIG},
+    {id:1,img:SOLEROBAR},{id:2,img:SOLEROSORVE},{id:3,img:SOLEROTROPIC},{id:4,img:SOLEROTROPICBIG},{id:5,img:SOLEROstrowberry}
   
 ]
 export const mezopeas = [
@@ -110,7 +111,7 @@ export const ices = [
 ]
 export const kids = [
     {id:1,img:MASTIGUM}, {id:2,img:MELON}, {id:3,img:MTRA},
-    {id:4,img:PZPZIM}
+    {id:4,img:PZPZIM},{id:5,img:LOL}
 ]
 export const snacks = [
     {id:1,img:TIMEOUT}, {id:2,img:TIMEOUTSHALGON}, {id:3,img:TIMEOUTWHITE},

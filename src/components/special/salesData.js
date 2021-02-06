@@ -40,13 +40,18 @@ import milkarec from '../../asserts/recommended/milkarec.png';
 import milkywayrec from '../../asserts/recommended/milkywayrec.png';
 import snickerswhiteicecreamrec from '../../asserts/recommended/snickerswhiteicecreamrec.png';
 import twinkiesrec from '../../asserts/recommended/twinkiesrec.png';
-
+import candypopre from '../../asserts/recommended/candypop.png';
 // import news
 
 import cotedor from '../../asserts/new/cotedor.png';
 import deepriver from '../../asserts/new/deepriver.png';
 import newMagnum from '../../asserts/new/magnum.png';
 import timtam from '../../asserts/new/timtam.png';
+import candypop from '../../asserts/new/candypop.png';
+import LOL from '../../asserts/new/LOL.png';
+import magnum9 from '../../asserts/new/magnum9.png';
+import snickerswhiteicecreamr from '../../asserts/new/snickerswhiteicecreamrec.png';
+import solerostrowberry from '../../asserts/new/solerostrowberry.png';
 
 export const iceCreamsSalesData = [
     {id:1,img:AVTIAHMELON},{id:2,img:BENJERRYS},{id:3,img:corneto},{id:4,img:corneto2},{id:5,img:CRUNCH},{id:6,img:extreme},
@@ -57,10 +62,10 @@ export const iceCreamsSalesData = [
 ]
 
 export const recommendedItems = [
-    {id:1,img:lotusicecreamrec},{id:2,img:milkarec},{id:3,img:milkywayrec},{id:4,img:snickerswhiteicecreamrec},{id:5,img:twinkiesrec}
+    {id:1,img:lotusicecreamrec},{id:2,img:milkarec},{id:3,img:milkywayrec},{id:4,img:snickerswhiteicecreamrec},{id:5,img:twinkiesrec},{id:6,img:candypopre}
 ]
 
 export const newItems = [
-    {id:1,img:cotedor},{id:2,img:deepriver},{id:3,img:newMagnum},{id:4,img:timtam}
+    {id:1,img:cotedor},{id:2,img:deepriver},{id:3,img:newMagnum},{id:4,img:timtam},{id:5,img:candypop},{id:6,img:LOL},{id:7,img:magnum9},{id:8,img:snickerswhiteicecreamr},{id:9,img:solerostrowberry},
 ]
 

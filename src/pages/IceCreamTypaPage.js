@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-
+import {useParams} from 'react-router-dom';
 import {shtrausMagnum,tilons,soleros,mezopeas,ices,kids,snacks,family,shocobo} from '../data/iceCreams/iceCreamTypes';
 import {feldmanIces,feldmanSnacks,feldmanMazopa,feldmanTyopla,granitas,galits,glidals} from '../data/iceCreams/feldman';
 import {benjerrys,milkas,cadubarys,oreos,haagens,kinders,mnms,brandSnacks} from '../data/iceCreams/brands';
@@ -8,7 +8,8 @@ import {crunches,lafrutas,nestleTilons,kuklidas,nestleIces,nestleKids} from '../
 
 const IceCreamTypaPage = ({match}) => {
     console.log(match);
-    const {title} = match.params;
+    //const {title} = match.params;
+    const {title} = useParams();
     //const img = title === "shtrous-magnum" ? magnum  : tilon
     const bgStyle = {
        height:'20rem'

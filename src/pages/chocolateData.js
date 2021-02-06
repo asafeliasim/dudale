@@ -57,6 +57,14 @@ import timatamwhite from '../asserts/img/chocolates/timtamwhite.png';
 import twinkies from '../asserts/img/chocolates/twinkies.png';
 import maltesers from '../asserts/img/chocolates/maltesers.png';
 import tenta from '../asserts/img/chocolates/tenta.png';
+import mmgrabngosize from '../asserts/img/chocolates/m&mgrabngosize.png';
+import MILKAdonut from '../asserts/img/chocolates/MILKAdonut.png';
+import MILKAmousse from '../asserts/img/chocolates/MILKAmousse.png';
+import milkaoreominis from '../asserts/img/chocolates/milkaoreominis.png';
+import TOFFIFEE from '../asserts/img/chocolates/TOFFIFEE.png';
+import Torku from '../asserts/img/chocolates/Torku.png';
+import Torkubaloony from '../asserts/img/chocolates/Torkubaloony.png';
+import Torkugreen from '../asserts/img/chocolates/Torkugreen.png';
 export default [
     {
         id:1,
@@ -81,7 +89,7 @@ export default [
     {id:25,img:oreo},{id:26,img:oreodutch},{id:27,img:ptibervanil},{id:28,img:ptiberchoco},/* {id:29,img:NUTELLAToGO}, */{id:30,img:timatamwhite},{id:31,img:timatamstrawberry},{id:32,img:timtam},
     {id:33,img:timmtamcarmel},{id:34,img:timtamduble},{id:35,img:timatamhonny},{id:36,img:timatamotange},{id:37,img:Kinderfinger50},{id:38,img:Kinderfinger100},{id:39,img:Kinderjoy},{id:40,img:Kinderegg},
     {id:41,img:snickers},{id:42,img:resees}, {id:43,img:hershizdrop},{id:44,img:Kinderdelis}, {id:45,img:happynuts},{id:46,img:happycacao}, {id:47,img:hanutariggle},{id:48,img:twinkies},{id:49,img:maltesers},
-    {id:50,img:tenta}
+    {id:50,img:tenta},{id:51,img:mmgrabngosize},{id:52,img:MILKAdonut},{id:53,img:MILKAmousse},{id:54,img:milkaoreominis},{id:55,img:TOFFIFEE},{id:56,img:Torku},{id:57,img:Torkubaloony},{id:58,img:Torkugreen}
 ]
 
 

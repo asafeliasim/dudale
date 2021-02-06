@@ -30,6 +30,18 @@ import PRINGLESBBQ from '../asserts/img/snacks/PRINGLESBBQ.png';
 import PRINGLESONION from '../asserts/img/snacks/PRINGLESONION.png';
 import PRINGLESPIZZA from '../asserts/img/snacks/PRINGLESPIZZA.png';
 import WERTHECLASSIC from '../asserts/img/snacks/WERTHECLASSIC.png';
+import dobonim from '../asserts/img/snacks/dobonim.png';
+import candypopMM from '../asserts/img/snacks/candypopM&M.png';
+import candypopsnickers from '../asserts/img/snacks/candypopsnickers.png';
+import candypoptwix from '../asserts/img/snacks/candypoptwix.png';
+import pringlesbbqBIG from '../asserts/img/snacks/pringlesbbqBIG.png';
+import pringlesBuffaloRanchBIG from '../asserts/img/snacks/pringlesBuffaloRanchBIG.png';
+import pringlescheesycheeseBIG from '../asserts/img/snacks/pringlescheesycheeseBIG.png';
+import pringleshotandspicyBIG from '../asserts/img/snacks/pringleshotandspicyBIG.png';
+import pringlesketchupBIG from '../asserts/img/snacks/pringlesketchupBIG.png';
+import pringlespaprikaBIG from '../asserts/img/snacks/pringlespaprikaBIG.png';
+import pringlespizzaBIG from '../asserts/img/snacks/pringlespizzaBIG.png';
+import pringlessourcreamBIG from '../asserts/img/snacks/pringlessourcreamBIG.png';
 
 export default [
     {id:1,img:mikeanddikro},
@@ -69,5 +81,18 @@ export default [
     {id:24,img:cupcakes},
     {id:25,img:twinkies},
     {id:26,img:twinkiesmint},
+    
+    {id:27,img:dobonim},
+    {id:28,img:candypopMM},
+    {id:29,img:candypopsnickers},
+    {id:30,img:candypoptwix},
+    {id:31,img:pringlesbbqBIG},
+    {id:32,img:pringlesBuffaloRanchBIG},
+    {id:33,img:pringlescheesycheeseBIG},
+    {id:34,img:pringleshotandspicyBIG},
+    {id:35,img:pringlesketchupBIG},
+    {id:36,img:pringlespaprikaBIG},
+    {id:37,img:pringlespizzaBIG},
+    {id:38,img:pringlessourcreamBIG},
 ]
 

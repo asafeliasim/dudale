@@ -70,9 +70,10 @@ import snickerswhiteicecream from './images/brands/snacks2/snickerswhiteicecream
 import TOBLERONEicecream from './images/brands/snacks2/TOBLERONEicecream.png';
 import twixicecream from './images/brands/snacks2/twixicecream.png';
 import cotedor from './images/brands/cotedor/cotedor.png';
+import lotusicecream from './images/brands/snacks2/lotusicecream.png';
 export const brandSnacks = [
     {id:1,img:bountyicecream},{id:2,img:marsicecream},{id:3,img:snickersBIG},{id:4,img:snickersicecream},{id:5,img:snickersicecream2},
-    {id:6,img:snickerswhiteicecream},{id:7,img:TOBLERONEicecream},{id:8,img:twixicecream},{id:9,img:cotedor}
+    {id:6,img:snickerswhiteicecream},{id:7,img:TOBLERONEicecream},{id:8,img:twixicecream},{id:9,img:cotedor},{id:10,img:lotusicecream}
 ]
 
 

@@ -63,7 +63,7 @@ const App = () => {
           <Route path="/snacks" render={()=><Products products={snacks} img={snacksbg} />}/>
           <Route path="/creams" render={()=><Products products={creams} img={creamsbg} col={4}/>}/>
           <Route path="/icecreams" render={()=><IceCreamProducts />} exact/>
-          <Route path="/icecreams/:title" component={IceCreamTypaPage} exact/>
+          <Route path="/icecreams/:title" children={<IceCreamTypaPage/>} />
       </Switch>
       </Router>
       <Footer />
