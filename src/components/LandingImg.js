@@ -1,14 +1,14 @@
 import React,{Fragment} from 'react';
 import mobilebg from '../asserts/img/mbg.png';
-import bgImg2 from '../asserts/img/mainbackground.png';
+import bgImg2 from '../asserts/img/mainbackground2.png';
 
 
 
 
-const height = window.innerWidth > 960 ? '65rem' : '50rem'; 
+const height = window.innerWidth > 960 ? '85rem' : '50rem'; 
 const mobile = window.innerWidth <= 960 ? true : false;
 const bgStyle = {
-    backgroundImage: `linear-gradient(to bottom,rgba(255, 237, 207, 0.1),rgba(255, 237, 207, 0.2)),url(${bgImg2})`,
+    backgroundImage: `url(${bgImg2})`,
     backgroundPosition: 'center',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',

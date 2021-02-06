@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react';
 import {CSSTransition} from 'react-transition-group';
-import popupimg from '../../asserts/img/popupimg.jpeg';
+import popupimg from '../../asserts/img/popup.jpg';
 
 const Modal = ({img,show}) => {
     const [modalIsOpen,setModalIsOpen] = useState(false);
