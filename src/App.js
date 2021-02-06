@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import Social from './components/layout/Social';
 import Footer from './components/layout/footer/Footer';
 import chocolateData from './pages/chocolateData';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import {BrowserRouter as Router,Route,Switch,useParams} from 'react-router-dom';
 import chocolateBG from './asserts/img/chocolatsbg.jpeg';
 import Products from './pages/Products';
 import IceCreamProducts from './pages/IceCreamProducts';
@@ -23,13 +23,12 @@ import fruitsbg from './asserts/img/fruits/fruitdrinks.png';
 
 import drinksbg from './asserts/img/drinks/drinksbg.png';
 
-import Modal from './components/layout/Modal';
 
-const mobile = window.innerWidth <= 960 ? true : false;
 
 const App = () => {
   const [scroll,setScroll] = useState(false);
- 
+
+
   useEffect(() => {
     window.addEventListener('scroll',handleScroll);
   }, [])
@@ -64,7 +63,7 @@ const App = () => {
           <Route path="/snacks" render={()=><Products products={snacks} img={snacksbg} />}/>
           <Route path="/creams" render={()=><Products products={creams} img={creamsbg} col={4}/>}/>
           <Route path="/icecreams" render={()=><IceCreamProducts />} exact/>
-          <Route path="/icecreams/:title" render={()=><IceCreamTypaPage/>}/>
+          <Route path="/icecreams/:title" component={IceCreamTypaPage} exact/>
       </Switch>
       </Router>
       <Footer />
