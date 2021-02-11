@@ -45,7 +45,7 @@ const Special = () => {
             </div>
             <div className={special? "special_container-sales mt-5" : "special_container container mt-5"}>
                 <div className={special?"present container-fluid special_sales":"none"}>
-                    <Sales  products={iceCreamsSalesData}/>
+                    <Sales products={iceCreamsSalesData}/>
                 </div>
                 <div className={news?"present container-fluid special_sales":"none"}>
                 <div className="row news">

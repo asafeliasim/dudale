@@ -4,6 +4,8 @@ import Navbar from './components/layout/navbar/Navbar';
 import Home from './pages/Home';
 import Social from './components/layout/Social';
 import Footer from './components/layout/footer/Footer';
+import ErrorPage from './components/layout/ErrorPage';
+
 import chocolateData from './pages/chocolateData';
 import {BrowserRouter as Router,Route,Switch,useParams} from 'react-router-dom';
 import chocolateBG from './asserts/img/chocolatsbg.jpeg';
@@ -63,7 +65,8 @@ const App = () => {
           <Route path="/snacks" render={()=><Products products={snacks} img={snacksbg} />}/>
           <Route path="/creams" render={()=><Products products={creams} img={creamsbg} col={4}/>}/>
           <Route path="/icecreams" render={()=><IceCreamProducts />} exact/>
-          <Route path="/icecreams/:title" children={<IceCreamTypaPage/>} />
+          <Route path="/icecreams/:title" render={()=><IceCreamTypaPage/>} exact/>
+          <Route path="*" component={ErrorPage} status={404}/>
       </Switch>
       </Router>
       <Footer />

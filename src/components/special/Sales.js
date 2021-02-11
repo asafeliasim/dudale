@@ -1,7 +1,6 @@
 import React from 'react'
 import Slider from "react-slick";
-import {iceCreamsSalesData} from './salesData';
-import Footer from '../layout/footer/Footer';
+
 
 const mobile = window.innerWidth <= 960 ? true : false;
 const rows = mobile ? 3 :2;
@@ -38,12 +37,12 @@ const Sales = ({products}) => {
         slidesToShow: show,
         slidesToScroll: move,
         rows:rows
-     
+        
         
       };
     return (
         
-      <>
+      <div className="slick">
         
          <Slider {...settings}>
         {products.map((sale)=> 
@@ -54,7 +53,7 @@ const Sales = ({products}) => {
          
         </Slider>
       
-      </> 
+      </div> 
     )
 }
 

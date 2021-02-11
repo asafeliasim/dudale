@@ -91,7 +91,7 @@
 .recomend{
     height: 80rem;
     padding-bottom: 10rem;
-    margin-right: 15rem;
+    //margin-right: 15rem;
     
     &_col{
         @media screen and(max-width:960px){
@@ -114,7 +114,7 @@
 .news{
     height: 80rem;
     padding-bottom: 10rem;
-    margin-right: 15rem;
+    margin-right: 20rem;
     @media screen and (max-width:960px) {
       
     }
@@ -134,4 +134,23 @@
             padding-left: 7rem;
         }
     }
+}
+.slick{
+
+}
+.slick-arrow{
+    display: block!important;
+   
+}
+/* .slick-prev:before{
+    position: absolute;
+    color: #000;
+    font-size: 5rem;
+    left: 200rem;
+} */
+.slick-next:before{
+    position: absolute;
+    color: $stone-color;
+    font-size: 5rem;
+    right: 2rem;
 }
